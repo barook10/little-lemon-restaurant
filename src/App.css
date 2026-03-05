@@ -333,6 +333,110 @@ main section {
   text-align: center;
 }
 
+/* Testimonials Section */
+.testimonials-section {
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.testimonials-section h2 {
+  color: #495E57;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .rating {
+  color: #F4CE14;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem auto;
+}
+
+.testimonial-card h4 {
+  color: #495E57;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.testimonial-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Chicago Section */
+.chicago-section {
+  padding: 3rem 1rem;
+  background-color: #495E57;
+  color: #f4e4c1;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chicago-content {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.chicago-content h2 {
+  color: #F4CE14;
+  margin-bottom: 1.5rem;
+}
+
+.chicago-content p {
+  color: #f4e4c1;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.chicago-images {
+  flex: 1;
+  min-width: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.chicago-images img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Booking Section */
+.booking-section {
+  padding: 3rem 1rem;
+  background-color: #fafafa;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 /* Image Styles */
 img {
   max-width: 100%;
@@ -464,6 +568,18 @@ footer a:active {
     gap: 2.5rem;
   }
 
+  .testimonials-section {
+    padding: 4rem 2rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .chicago-section {
+    padding: 4rem 2rem;
+  }
+
   footer {
     display: flex;
     justify-content: space-around;
@@ -531,6 +647,27 @@ footer a:active {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     padding: 0 4rem;
+  }
+
+  .testimonials-section {
+    padding: 5rem 4rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .chicago-section {
+    padding: 5rem 4rem;
+    gap: 4rem;
+  }
+
+  .chicago-content {
+    flex: 1;
+  }
+
+  .chicago-images {
+    flex: 1;
   }
 
   footer {
